@@ -1,0 +1,14 @@
+name: venv
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - pandas
+  - pip
+  - matplotlib
+  - pip:
+    - pyaedt[all]
+    - requests==2.28.1 
