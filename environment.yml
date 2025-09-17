@@ -12,3 +12,7 @@ dependencies:
   - pip:
     - pyaedt[all]
     - requests==2.28.1 
+    - optuna
+    - plotly
+    - scikit-learn
+
