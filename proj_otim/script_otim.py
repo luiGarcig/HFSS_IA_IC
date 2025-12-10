@@ -13,38 +13,40 @@ def SingleFrequency(
     maxDeltaS= 0.01,
     name="MySetup"
 ):
-    hfss.create_open_region(frequency=freq)
     setup.props["Frequency"] = freq
     setup.props["MaximumPasses"] = maxPasses
     setup.props["MaxDeltaS"] =maxDeltaS
-    setup.props["UseIterativeSolver"] = True
+    setup.props["MinimumPasses"] = 2
+    setup.props["MinimumConvergedPasses"] = 2
+    setup.props["UseDirectSolver"] = True
     setup.props["SaveRadFieldsOnly"] = True
     setup.props["RadiationSetup"] = "3D"
     setup.props["ComputeFarFields"] = True
+    setup.props["BasisOrder"] = -1
+    setup.update()
 
-def LinearCountSweep(
+def LinearStepSweep(
     hfss,
     setup,
     fStart,
     fStop,
-    freqPonts=201,
-    units="MHz",
+    stepSize=0.01,
+    units="GHz",
     saveFields=True,
     saveRadFields=True
 ):
-    sweep = hfss.create_linear_count_sweep(
+    hfss.create_linear_step_sweep(
         setup=setup.name,
-        units=units,
+        unit=units,
         start_frequency=fStart,
         stop_frequency=fStop,
-        num_of_freq_points = freqPonts,
+        step_size = stepSize,
         name= "sweep",
         sweep_type="Interpolating",
         save_fields=saveFields,
         save_rad_fields=saveRadFields
     )
 
-# Pass 'hfss' as argument
 def SaveAnalyseSetup(
     hfss,
     setup="MySetup"
@@ -56,7 +58,7 @@ def makeAntenna(a1, a2, n1, n2, n3, n4, perc, r, temp_folder):
     x_sub = 200
     y_sub = 280
     h = 1.65
-    w = 5
+    w = 3
 
     l = (y_sub * perc)
     h_cut = (r*2) - (y_sub - l)
@@ -165,6 +167,18 @@ def makeAntenna(a1, a2, n1, n2, n3, n4, perc, r, temp_folder):
     p.delete(cut3)
     monopole_unite = p.unite([monopole, path])
 
+    w_airbox = (500*2)+x_sub
+    h_airbox = (500*2)+y_sub
+    d_airbox = (500*2)+h
+
+    airbox = p.create_box(
+        [-w_airbox/2, -h_airbox/2, -d_airbox/2],
+        [w_airbox, h_airbox, d_airbox],
+        name="airbox",
+        material="air"
+    )
+    
+
     hfss.lumped_port(
         assignment=port.name, 
         reference=gnd.name,
@@ -182,11 +196,17 @@ def makeAntenna(a1, a2, n1, n2, n3, n4, perc, r, temp_folder):
         monopole.name
     )
 
+    hfss.assign_radiation_boundary_to_objects(  
+        airbox.name
+    )
+
     setup = hfss.create_setup("MySetup")
     
-    SingleFrequency(hfss, setup, "1500MHz", 30,0.02)
-    LinearCountSweep(hfss, setup, 300,1500)
+    SingleFrequency(hfss, setup, "1.6GHz", 30,0.02)
+    LinearStepSweep(hfss, setup, 0.2, 1.6)
     SaveAnalyseSetup(hfss)
+
+
 
     try:
         solutions = hfss.post.get_solution_data(
@@ -211,6 +231,7 @@ def makeAntenna(a1, a2, n1, n2, n3, n4, perc, r, temp_folder):
         listaReal2.append(float(c))
     dfRealGap.insert(0, "Frequency [MHz]", listaReal, True)
     dfRealGap.insert(1, "|$S_{11}$| [dB]", listaReal2, True)
+
 
     hfss.close_project()
     return dfRealGap

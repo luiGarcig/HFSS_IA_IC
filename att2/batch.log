@@ -1,0 +1,116 @@
+ 
+Ansys Electronics Desktop Version 2025.1.0, Build: 2024-11-30 15:03:33
+Location: C:\Program Files\ANSYS Inc\v251\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:36:28 AM  Jul 23, 2025
+Running as user : SERVIDORES\luis.costa
+Temp directory: C:\Users\ADMINI~1\AppData\Local\Temp
+Project directory: C:\Users\luis.costa\Documents\Ansoft
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project1.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project10.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project11.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project12.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project2.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project3.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project4.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project5.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project6.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project7.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project8.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project9.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+-- Message Window --
+      *Global - Messages
+        [warning] Electronics Desktop has found a recovery file for an unsaved project : Project1.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [warning] Electronics Desktop has found a recovery file for an unsaved project : Project10.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [warning] Electronics Desktop has found a recovery file for an unsaved project : Project11.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [warning] Electronics Desktop has found a recovery file for an unsaved project : Project12.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [warning] Electronics Desktop has found a recovery file for an unsaved project : Project2.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [warning] Electronics Desktop has found a recovery file for an unsaved project : Project3.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [warning] Electronics Desktop has found a recovery file for an unsaved project : Project4.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [warning] Electronics Desktop has found a recovery file for an unsaved project : Project5.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [warning] Electronics Desktop has found a recovery file for an unsaved project : Project6.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [warning] Electronics Desktop has found a recovery file for an unsaved project : Project7.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [warning] Electronics Desktop has found a recovery file for an unsaved project : Project8.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [warning] Electronics Desktop has found a recovery file for an unsaved project : Project9.aedt.auto Please choose one of the following actions for this file:   Yes: Open the recovery file.   No: Discard the recovery file.  Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+        [info] GRPC server running on port: 50387. 
+        [info] Project Project14 has been created.
+        [info] No design is present. Inserting a new design.
+        [info] Added design 'HFSS_RGQ' of type HFSS.
+        [info] Aedt Objects correctly read
+        [info] Modeler class has been initialized! Elapsed time: 0m 0sec
+        [info] Materials class has been initialized! Elapsed time: 0m 0sec
+        [info] Boundary Radiation Rad__EKRZ1U has been created.
+        [info] Enabling Material Override
+        [info] Boundary Lumped Port port1_FFDDJD has been created.
+        [info] Boundary Lumped Port port2_7T4BG4 has been created.
+        [info] Boundary Perfect E PerfectE_ground has been created.
+        [info] Boundary Perfect E PerfectE_path has been created.
+        [info] PostProcessor class has been initialized! Elapsed time: 0m 0sec
+        [info] PostProcessor class has been initialized! Elapsed time: 0m 0sec
+        [info] Post class has been initialized! Elapsed time: 0m 0sec
+        [info] Open Region correctly created.
+        [info] Project Project14 Saved correctly
+        [info] Parsing C:/Users/luis.costa/Documents/Ansoft/Project14.aedt.
+        [info] File C:/Users/luis.costa/Documents/Ansoft/Project14.aedt correctly loaded. Elapsed time: 0m 0sec
+        [info] aedt file load time 0.09964823722839355
+        [info] Linear step sweep sweep has been correctly created
+        [info] Project MicroStrip Saved correctly
+        [info] Key Desktop/ActiveDSOConfigurations/HFSS correctly changed.
+        [info] Solving design setup MySetup
+        [info] Key Desktop/ActiveDSOConfigurations/HFSS correctly changed.
+        [info] Design setup MySetup solved correctly in 0.0h 1.0m 56.0s
+-- Message Window --
+Stopping Batch Run: 10:43:31 AM  Jul 23, 2025
+ 
+Ansys Electronics Desktop Version 2025.1.0, Build: 2024-11-30 15:03:33
+Location: C:\Program Files\ANSYS Inc\v251\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:19:31 AM  Oct 08, 2025

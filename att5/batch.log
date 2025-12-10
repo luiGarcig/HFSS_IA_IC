@@ -1,0 +1,171 @@
+ 
+Ansys Electronics Desktop Version 2025.1.0, Build: 2024-11-30 15:03:33
+Location: C:\Program Files\ANSYS Inc\v251\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:10:58 AM  Jul 01, 2025
+Running as user : SERVIDORES\luis.costa
+Temp directory: C:\Users\ADMINI~1\AppData\Local\Temp
+Project directory: C:\Users\luis.costa\Documents\Ansoft
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 55187. 
+        [info] Project Project42 has been created.
+        [info] No design is present. Inserting a new design.
+        [info] Added design 'HFSS_XW1' of type HFSS.
+        [info] Aedt Objects correctly read
+        [info] Modeler class has been initialized! Elapsed time: 0m 0sec
+        [info] Materials class has been initialized! Elapsed time: 0m 0sec
+        [info] Parsing design objects. This operation can take time
+        [info] Refreshing bodies from Object Info
+        [info] Bodies Info Refreshed Elapsed time: 0m 0sec
+        [info] 3D Modeler objects parsed. Elapsed time: 0m 0sec
+        [info] Union of 2 objects has been executed.
+        [info] Parsing design objects. This operation can take time
+        [info] Refreshing bodies from Object Info
+        [info] Bodies Info Refreshed Elapsed time: 0m 0sec
+        [info] 3D Modeler objects parsed. Elapsed time: 0m 0sec
+        [info] Deleted 1 Objects: cut.
+        [info] Boundary Perfect E PerfectE_patch has been created.
+        [info] Boundary Perfect E PerfectE_gnd has been created.
+        [info] Enabling Material Override
+        [info] Boundary Lumped Port port1_WQVJ7S has been created.
+        [info] PostProcessor class has been initialized! Elapsed time: 0m 0sec
+        [info] PostProcessor class has been initialized! Elapsed time: 0m 0sec
+        [info] Post class has been initialized! Elapsed time: 0m 0sec
+        [info] Open Region correctly created.
+        [info] Project Project42 Saved correctly
+        [info] Parsing C:/Users/luis.costa/Documents/Ansoft/Project42.aedt.
+        [info] File C:/Users/luis.costa/Documents/Ansoft/Project42.aedt correctly loaded. Elapsed time: 0m 0sec
+        [info] aedt file load time 0.05488991737365723
+        [info] Linear count sweep sweep has been correctly created.
+        [info] Project AntennaPatchGap Saved correctly
+        [info] Key Desktop/ActiveDSOConfigurations/HFSS correctly changed.
+        [info] Solving design setup MySetup
+        [info] Key Desktop/ActiveDSOConfigurations/HFSS correctly changed.
+        [info] Design setup MySetup solved correctly in 0.0h 1.0m 23.0s
+        [info] Solution Data Correctly Loaded.
+        [info] Solution Data Correctly Loaded.
+-- Message Window --
+Stopping Batch Run: 10:16:14 AM  Jul 01, 2025
+ 
+Ansys Electronics Desktop Version 2025.1.0, Build: 2024-11-30 15:03:33
+Location: C:\Program Files\ANSYS Inc\v251\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 8:29:11 AM  Jul 04, 2025
+Running as user : SERVIDORES\luis.costa
+Temp directory: C:\Users\ADMINI~1\AppData\Local\Temp
+Project directory: C:\Users\luis.costa\Documents\Ansoft
+[error] No such feature exists.
+Feature
+hfss_gui
+License path
+27001@einstein;
+FlexNet Licensing error
+-5,147
+
+
+ 
+Ansys Electronics Desktop Version 2025.1.0, Build: 2024-11-30 15:03:33
+Location: C:\Program Files\ANSYS Inc\v251\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 8:30:04 AM  Jul 04, 2025
+Running as user : SERVIDORES\luis.costa
+Temp directory: C:\Users\ADMINI~1\AppData\Local\Temp
+Project directory: C:\Users\luis.costa\Documents\Ansoft
+[error] No such feature exists.
+Feature
+hfss_gui
+License path
+27001@einstein;
+FlexNet Licensing error
+-5,147
+
+
+ 
+Ansys Electronics Desktop Version 2025.1.0, Build: 2024-11-30 15:03:33
+Location: C:\Program Files\ANSYS Inc\v251\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:34:09 AM  Jul 04, 2025
+Running as user : SERVIDORES\luis.costa
+Temp directory: C:\Users\ADMINI~1\AppData\Local\Temp
+Project directory: C:\Users\luis.costa\Documents\Ansoft
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+ 
+Ansys Electronics Desktop Version 2025.1.0, Build: 2024-11-30 15:03:33
+Location: C:\Program Files\ANSYS Inc\v251\AnsysEM\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:29:39 PM  Jul 10, 2025
+Running as user : SERVIDORES\luis.costa
+Temp directory: C:\Users\ADMINI~1\AppData\Local\Temp
+Project directory: C:\Users\luis.costa\Documents\Ansoft
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project1.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project10.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project11.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project12.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project2.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project3.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project4.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project5.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project6.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project7.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project8.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
+[warning] Electronics Desktop has found a recovery file for an unsaved project : Project9.aedt.auto
+Please choose one of the following actions for this file: 
+ Yes: Open the recovery file. 
+ No: Discard the recovery file.
+ Cancel: Leave the recovery file on disk ( this prompt will reappear during the next application start) .
