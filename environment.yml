@@ -9,6 +9,9 @@ dependencies:
   - pandas
   - pip
   - matplotlib
+  - pytorch::pytorch
+  - pytorch::cpuonly
+  - botorch
   - pip:
     - pyaedt[all]
     - requests==2.28.1 

@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from weakref import ref
+
 import numpy as np
 import pandas as pd
 import os
@@ -59,6 +61,8 @@ def makeAntenna(a1, a2, n1, n2, n3, n4, perc, r, temp_folder):
     y_sub = 280
     h = 1.65
     w = 3
+    vivolength = 4
+    moverc = -248.4
 
     l = (y_sub * perc)
     h_cut = (r*2) - (y_sub - l)
@@ -110,6 +114,95 @@ def makeAntenna(a1, a2, n1, n2, n3, n4, perc, r, temp_folder):
 
     monopole.move([0, -y_sub/2 + l + r - 15,h])
 
+    #CRIANDO A PORTA DO MONOPOLO =======================================================================================
+
+    #Copper
+    externCylinder = p.create_cylinder(
+        constants.AXIS.Y,
+        [0,0,0],
+        3,
+        -9.5,
+        material="copper",
+        name="externCylinder"
+    )
+
+    ExternCutCylinder = p.create_cylinder(
+        constants.AXIS.Y,
+        [0,0,0],
+        2.5,
+        -9.5,
+        material="copper",
+        name="ExternCutCylinder"
+    )
+
+    externBox = p.create_box(
+        [-6.45/2,0,-6.45/2],
+        [6.45,-2,6.45],
+        material="copper",
+        name="externBox"
+    )
+    p.unite([externCylinder, externBox])
+    p.subtract(externCylinder, ExternCutCylinder)
+    p.delete(ExternCutCylinder)
+    p.delete(externBox)
+    hfss.modeler.move(externCylinder, [0 ,-y_sub/2 ,2.15])
+
+    vivo = p.create_cylinder(
+        constants.AXIS.Y,
+        [0,-9.5,0],
+        0.5,
+        9.5+vivolength,
+        material="copper",
+        name="vivo"
+    )
+    hfss.modeler.move(vivo, [0 ,-y_sub/2 ,2.15])
+
+    #pec
+    circle = p.create_circle(
+        constants.AXIS.Y,
+        [0,-10.5,0],
+        3,
+        name="circle"
+    )
+    p.thicken_sheet(circle, thickness=1)
+    circle.material_name = "pec"
+    hfss.modeler.move(circle,  [0 ,-y_sub/2 ,2.15])
+
+    #Teflon
+    teflonCylinder = p.create_cylinder(
+        constants.AXIS.Y,
+        [0,0,0],
+        2.5,
+        -9.5,
+        material="Teflon (tm)",
+        name="teflonCylinder"
+    )
+
+    teflonCylinderCut = p.create_cylinder(
+        constants.AXIS.Y,
+        [0,0,0],
+        0.5,
+        -9.5,
+        material="Teflon (tm)",
+        name="teflonCylinderCut"
+    )
+
+    p.subtract(teflonCylinder, teflonCylinderCut)
+    p.delete(teflonCylinderCut) 
+    hfss.modeler.move(teflonCylinder, [0 ,-y_sub/2 ,2.15])
+    #2d
+
+    port = p.create_circle(
+        constants.AXIS.Y,
+        [0,-9.5,0],
+        3,
+        name="port"
+    )
+    hfss.modeler.move(port,  [0 ,-y_sub/2 ,2.15])
+
+    #===================================================================================================================
+
+
     substrate = p.create_box(
         [-x_sub/2,-y_sub/2,0],
         [x_sub,y_sub,h],
@@ -129,13 +222,6 @@ def makeAntenna(a1, a2, n1, n2, n3, n4, perc, r, temp_folder):
         [-w/2, -y_sub/2, h],
         [w, l+80],
         "path",
-    ) 
-
-    port = p.create_rectangle(
-        constants.AXIS.Y,
-        [-w/2, -y_sub/2, 0],
-        [h, w], 
-        "port",
     )
 
     if h_cut > 0:
@@ -177,16 +263,26 @@ def makeAntenna(a1, a2, n1, n2, n3, n4, perc, r, temp_folder):
         name="airbox",
         material="air"
     )
-    
 
-    hfss.lumped_port(
-        assignment=port.name, 
-        reference=gnd.name,
-        integration_line=hfss.AxisDir.ZNeg, 
+    center_pt = [0 ,-y_sub/2-9.5 ,2.15]
+    end_pt = [0 ,-y_sub/2-9.5 ,2.15-3]
+    
+    hfss.wave_port(
+        assignment=port.name,  
+        integration_line=[center_pt, end_pt], 
         impedance=50,
-        name=generate_unique_name("port"),
+        name=generate_unique_name("port1"),
         renormalize=False,
     )
+
+#    hfss.lumped_port(
+#        assignment=port.name, 
+#        reference=gnd.name,
+#        integration_line=hfss.AxisDir.ZNeg, 
+#        impedance=50,
+#        name=generate_unique_name("port"),
+#        renormalize=False,
+#    )
 
     hfss.assign_perfect_e(
         gnd.name
@@ -231,7 +327,5 @@ def makeAntenna(a1, a2, n1, n2, n3, n4, perc, r, temp_folder):
         listaReal2.append(float(c))
     dfRealGap.insert(0, "Frequency [MHz]", listaReal, True)
     dfRealGap.insert(1, "|$S_{11}$| [dB]", listaReal2, True)
-
-
     hfss.close_project()
     return dfRealGap
